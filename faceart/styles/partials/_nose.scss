@@ -1,0 +1,11 @@
+@import "./variables";
+
+.nose {
+  position: absolute;
+  border: $eye-bt-bb;
+  width: 2.5rem;
+  height: 1.875rem;
+  border-radius: 0 0 100% 100%;
+  border-top: none;
+  margin-top: 6.25rem;
+}

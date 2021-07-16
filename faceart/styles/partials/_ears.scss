@@ -1,0 +1,21 @@
+@import "./variables";
+
+.ears {
+  z-index: -1;
+  position: absolute;
+  width: 21.25rem;
+  display: flex;
+  justify-content: space-between;
+
+  .ear {
+    width: 1.5625rem;
+    height: 4.375rem;
+    border: 2px solid hsl(19, 46%, 68%);
+    background: hsl(19, 76%, 85%);
+    border-radius: 0 100% 100% 0;
+
+    &:first-child {
+      border-radius: 100% 0 0 100%;
+    }
+  }
+}

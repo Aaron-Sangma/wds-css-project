@@ -1,0 +1,46 @@
+@import "./variables";
+@import "./mixin";
+@import "./head";
+
+.face-mask {
+  @include face-mouth;
+  left: $emoji-size * 0.2;
+  transform: none;
+  width: $emoji-size * 0.6;
+  //subtracted from here to get .3 by dividing then subtraxted from mixin value to get .2
+  height: $emoji-size * 0.35;
+  border-radius: 10%;
+  background-color: $mask-color;
+  border: $br-face-mask;
+
+  .strap {
+    position: absolute;
+    border: $br-face-mask;
+    background-color: $mask-color;
+    width: $emoji-size * 0.5;
+    height: $emoji-size * 0.1;
+    z-index: -2;
+
+    &-top-left {
+      transform: rotate(20deg);
+      top: $emoji-size * -0.05;
+      left: $emoji-size * -0.4;
+    }
+    &-top-right {
+      transform: rotate(-20deg);
+      top: $emoji-size * -0.05;
+      right: $emoji-size * -0.4;
+    }
+
+    &-bottom-left {
+      transform: rotate(-30deg);
+      bottom: $emoji-size * -0.06;
+      left: $emoji-size * -0.4;
+    }
+    &-bottom-right {
+      transform: rotate(30deg);
+      bottom: $emoji-size * -0.06;
+      right: $emoji-size * -0.4;
+    }
+  }
+}

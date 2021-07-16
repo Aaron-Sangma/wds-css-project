@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="dark__header grid">
+        <div class="content">
+          <div class="brand__row">
+            <img src="./assets/svgs/logo.png" alt="logo" class="logo" />
+            <h2 class="brand__name">Web Dev Simplified</h2>
+          </div>
+          <h1 class="title">Exclusive Course Discounts</h1>
+          <h3 class="sub__title">
+            Be the first to know when my
+            <em>Learn React Today</em>
+            course drops!
+          </h3>
+        </div>
+      </div>
+      <div class="dark__header__divider"></div>
+      <div class="light__header grid">
+        <div class="content">
+          <form action="/email" method="POST" class="email__form">
+            <input type="email" name="emai" placeholder="Enter Your Email" />
+            <button type="submit">Join Now!</button>
+          </form>
+        </div>
+      </div>
+      <div class="light__header__divider"></div>
+    </header>
+    <main>
+      <section class="grid grid__video">
+        <video poster="./assets/thumbnail.jpg" controls>
+          <source src="./assets/videos/video.mp4" type="video/mp4" />
+        </video>
+        <div class="benefits__section">
+          <div class="benefit">
+            <img src="./assets/svgs/email-icon.svg" alt="email icon" />
+            Email Updates
+          </div>
+          <div class="benefit">
+            <img src="./assets/svgs/money-icon.svg" alt="money icon" />
+            Specials Discounts
+          </div>
+          <div class="benefit">
+            <img
+              src="./assets/svgs/extra-content-icon.svg"
+              alt="Content icon"
+            />Exclusive Content
+          </div>
+        </div>
+      </section>
+      <section class="grid grid__benefit__detail">
+        <div class="benefit__detail">
+          <div class="benefit__detail__title">Email Updates</div>
+          <div class="benefit__detail__text">
+            All Web Dev Simplified course, YouTube, and Patreon updates will be
+            sent via email to members so you can stay up to date with everything
+            Web Dev Simplified.
+          </div>
+        </div>
+        <div class="benefit__detail">
+          <div class="benefit__detail__title">Special Discounts</div>
+          <div class="benefit__detail__text">
+            All members of the Web Dev Simplified mailing list will receive
+            exclusive discounts on <strong>all future</strong> Web Dev
+            Simplified courses.
+          </div>
+        </div>
+        <div class="benefit__detail">
+          <div class="benefit__detail__title">Extra Content</div>
+          <div class="benefit__detail__text">
+            Email members will receive extra content such as course updates,
+            discounts, and behind the scenes information on everything Web Dev
+            Simplified.
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

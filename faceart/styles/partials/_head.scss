@@ -1,0 +1,16 @@
+@import "./variables";
+
+.head {
+  background: $head-bc;
+  width: $head-w;
+  height: $head-h;
+  border-radius: $head-br;
+  @include flexCenter;
+}
+
+@import "./eyes";
+@import "./brows";
+@import "./nose";
+@import "./mouth";
+@import "./ears";
+@import "./hairs";

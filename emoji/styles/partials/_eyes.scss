@@ -1,0 +1,21 @@
+@import "./variables";
+
+.eyes {
+  position: absolute;
+  top: $emoji-size * 0.25;
+  left: $emoji-size * 0.5;
+
+  .eye {
+    position: absolute;
+    width: $emoji-size * 0.075;
+    height: $emoji-size * 0.15;
+    background-color: $eye-mouth-clr;
+    border-radius: $br-of-50;
+    &-left {
+      left: $emoji-size * -0.2;
+    }
+    &-right {
+      right: $emoji-size * -0.2;
+    }
+  }
+}

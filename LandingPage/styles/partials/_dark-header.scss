@@ -1,0 +1,49 @@
+.dark__header {
+  background-color: #005681;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 0 40px;
+  grid-template-areas: ". content content content content .";
+
+  .content {
+    grid-area: content;
+    max-width: 62.5rem;
+    width: 100%;
+
+    .brand__row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .logo {
+        width: 3.125rem;
+        margin: 0.5rem;
+      }
+    }
+    .title {
+      font-size: 3rem;
+      text-align: center;
+    }
+    .sub__title {
+      font-size: 1.5rem;
+      align-items: center;
+      font-weight: normal;
+    }
+  }
+}
+
+.dark__header__divider {
+  background-image: url(../../assets/svgs/dark-background.svg);
+  height: 9.375rem;
+  margin-top: -5px;
+  background-position: bottom left;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}

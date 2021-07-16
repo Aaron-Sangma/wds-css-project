@@ -1,0 +1,11 @@
+@import "./variables";
+
+.head {
+  border-radius: $br-of-50;
+  height: $wh-of-100;
+  width: $wh-of-100;
+  background-color: $emoji-face-color;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}

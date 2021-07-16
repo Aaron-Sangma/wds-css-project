@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #bdbdbd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.emoji {
+  margin: 1rem;
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+.emoji .head {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: #ffc83d;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+.emoji .eyes {
+  position: absolute;
+  top: 3.125rem;
+  left: 6.25rem;
+}
+
+.emoji .eyes .eye {
+  position: absolute;
+  width: 0.9375rem;
+  height: 1.875rem;
+  background-color: #0c0c0c;
+  border-radius: 50%;
+}
+
+.emoji .eyes .eye-left {
+  left: -2.5rem;
+}
+
+.emoji .eyes .eye-right {
+  right: -2.5rem;
+}
+
+.emoji .smile {
+  position: absolute;
+  bottom: 1.875rem;
+  left: 6.25rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #0c0c0c;
+  width: 7.5rem;
+  height: 3.75rem;
+  border-radius: 5% 5% 3.75rem 3.75rem;
+}
+
+.emoji .open-mouth {
+  position: absolute;
+  bottom: 1.875rem;
+  left: 6.25rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #0c0c0c;
+  width: 3.125rem;
+  height: 3.75rem;
+  border-radius: 50%;
+}
+
+.emoji .head {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: #ffc83d;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+.emoji .face-mask {
+  position: absolute;
+  bottom: 1.875rem;
+  left: 6.25rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #0c0c0c;
+  left: 2.5rem;
+  -webkit-transform: none;
+          transform: none;
+  width: 7.5rem;
+  height: 4.375rem;
+  border-radius: 10%;
+  background-color: white;
+  border: 0.25rem solid #999;
+}
+
+.emoji .face-mask .strap {
+  position: absolute;
+  border: 0.25rem solid #999;
+  background-color: white;
+  width: 6.25rem;
+  height: 1.25rem;
+  z-index: -2;
+}
+
+.emoji .face-mask .strap-top-left {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  top: -0.625rem;
+  left: -5rem;
+}
+
+.emoji .face-mask .strap-top-right {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  top: -0.625rem;
+  right: -5rem;
+}
+
+.emoji .face-mask .strap-bottom-left {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  bottom: -0.75rem;
+  left: -5rem;
+}
+
+.emoji .face-mask .strap-bottom-right {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  bottom: -0.75rem;
+  right: -5rem;
+}
+/*# sourceMappingURL=styles.css.map */

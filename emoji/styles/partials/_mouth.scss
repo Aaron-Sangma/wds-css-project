@@ -1,0 +1,18 @@
+@import "./variables";
+@import "./mixin";
+
+.smile {
+  $mth-h: $emoji-size * 0.3;
+
+  @include face-mouth;
+  width: $emoji-size * 0.6;
+  height: $mth-h;
+  border-radius: 5% 5% $mth-h $mth-h;
+}
+
+.open-mouth {
+  @include face-mouth;
+  width: $emoji-size * 0.25;
+  height: $emoji-size * 0.3;
+  border-radius: 50%;
+}

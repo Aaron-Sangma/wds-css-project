@@ -1,0 +1,11 @@
+$background-color: #e3e3e3;
+$color: #222;
+$accent-color: #0af;
+$border-size: 4px;
+
+@mixin pseudoContent {
+  content: "";
+  position: absolute;
+  inset: 0; //Means top button shorthand
+  z-index: -1;
+}

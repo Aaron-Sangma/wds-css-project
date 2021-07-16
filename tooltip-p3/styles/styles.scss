@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+$scale-0: 0;
+$scale-1: 1;
+$tooltip-color: #333;
+$arrow-size: 20px;
+$translate-y: -100%;
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.avatar {
+  width: 12.5rem;
+  height: 12.5rem;
+  border: 0.5px solid rgb(88, 87, 87);
+  border-radius: 50%;
+  background-image: url("https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: -0.8rem;
+    left: 50%;
+    transform: translateX(-50%) translateY($translate-y) scale($scale-0);
+    transition: 150ms transform;
+    transform-origin: bottom center;
+  }
+
+  &::before {
+    content: attr(data-tooltip);
+    color: white;
+    padding: 1rem;
+    width: max-content;
+    max-width: 100%;
+    background: $tooltip-color;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  &:hover::before {
+    $scale: 1;
+    transform: translateX(-50%) translateY($translate-y) scale($scale-1);
+  }
+  &::after {
+    content: "";
+    border: $arrow-size solid transparent;
+    border-top-color: $tooltip-color;
+  }
+  &:hover::after {
+    $scale: 1;
+    transform: translateX(-50%) translateY(-25%) scale($scale-1);
+  }
+}

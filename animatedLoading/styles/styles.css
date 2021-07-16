@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: gray;
+  height: 100vh;
+  width: 100vw;
+}
+
+.spinner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18.75rem;
+  height: 18.75rem;
+}
+
+.spinner_text {
+  font-size: 2em;
+  -webkit-animation: loading_text_opacity 3s ease-in-out infinite;
+          animation: loading_text_opacity 3s ease-in-out infinite;
+}
+
+.spinner_sector {
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 15px solid transparent;
+  mix-blend-mode: overlay;
+}
+
+.spinner_sector_blue {
+  -webkit-animation: rotate 2s ease-out infinite;
+          animation: rotate 2s ease-out infinite;
+  border-top: 15px solid lightblue;
+}
+
+.spinner_sector_red {
+  -webkit-animation: rotate 2.5s ease-in infinite;
+          animation: rotate 2.5s ease-in infinite;
+  border-top: 15px solid lightcoral;
+}
+
+.spinner_sector_green {
+  -webkit-animation: rotate 1.5s ease-in-out infinite;
+          animation: rotate 1.5s ease-in-out infinite;
+  border-top: 15px solid lightgreen;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loading_text_opacity {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes loading_text_opacity {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

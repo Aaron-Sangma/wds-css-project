@@ -1,0 +1,110 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+.hero {
+  background-image: url("assets/background_image.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .login-container {
+  background-color: rgba(0, 20, 31, 0.6);
+  padding: 3.125rem 1.875rem;
+  min-width: 25rem;
+  width: 50%;
+  max-width: 37.5rem;
+}
+
+.hero .login-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.hero .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.hero .input-group label {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0.4375rem;
+}
+
+.hero .input-group input {
+  font-size: 1.5rem;
+  padding: 0.1em;
+  background-color: rgba(209, 239, 255, 0.3);
+  border: 1px solid #00141f;
+  border-radius: 0.3125em;
+  outline: none;
+  color: white;
+  font-weight: 300;
+}
+
+.hero .input-group ::-webkit-input-placeholder {
+  color: rgba(209, 209, 209, 0.822);
+}
+
+.hero .input-group :-ms-input-placeholder {
+  color: rgba(209, 209, 209, 0.822);
+}
+
+.hero .input-group ::-ms-input-placeholder {
+  color: rgba(209, 209, 209, 0.822);
+}
+
+.hero .input-group ::placeholder {
+  color: rgba(209, 209, 209, 0.822);
+}
+
+.hero .input-group input:focus {
+  border: 1px solid #00a6ff;
+}
+
+.hero .login-btn {
+  border: 1px solid #00a6ff;
+  border-radius: 0.3125em;
+  outline: none;
+  background-color: rgba(0, 166, 255, 0.1);
+  padding: 0.625rem 1.875rem;
+  width: 100%;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.hero .login-btn:hover {
+  background-color: rgba(0, 166, 255, 0.3);
+}
+
+.hero .login-btn:focus {
+  background-color: rgba(12, 86, 126, 0.5);
+}
+/*# sourceMappingURL=styles.css.map */

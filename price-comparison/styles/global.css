@@ -1,0 +1,186 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #f8f9fb;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lato", sans-serif;
+}
+
+.price_comparison {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100%;
+  margin: 1rem;
+}
+
+.price_comparison_column {
+  background-color: white;
+  -webkit-box-shadow: 0 7px 30px rgba(53, 31, 97, 0.1);
+          box-shadow: 0 7px 30px rgba(53, 31, 97, 0.1);
+  padding: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  max-width: 17.1875rem;
+  border-radius: 0.5rem;
+}
+
+.price_comparison_column.popular {
+  position: relative;
+  background-color: #641bff;
+  -webkit-box-shadow: 0 7px 30px rgba(52, 13, 135, 0.3);
+          box-shadow: 0 7px 30px rgba(52, 13, 135, 0.3);
+  color: white;
+  margin-top: -1.5rem;
+  padding-top: 3.5rem;
+  margin-bottom: -1.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.price_comparison_column.popular .divider {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.price_comparison_column.popular .most_popular {
+  position: absolute;
+  inset: 0.5rem 0.5rem 0 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.price_comparison_column.popular .cta {
+  background-color: white;
+  color: #641bff;
+}
+
+.price_comparison_column:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.price_comparison_column:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.price_comparison_column .price_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.price_comparison_column .price_header .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3.5rem;
+}
+
+.price_comparison_column .price_header .price .dollar_sign {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+.price_comparison_column .price_header .price .per_month {
+  font-size: 0.75rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 1.1rem;
+  text-transform: uppercase;
+}
+
+.price_comparison_column .price_header .plan_name {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.price_comparison_column .divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.price_comparison_column .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem;
+}
+
+.price_comparison_column .feature img {
+  height: 1.1em;
+  width: 1.1em;
+  margin-right: 0.5rem;
+}
+
+.price_comparison_column .feature.inactive {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.price_comparison_column .cta {
+  border: none;
+  background-color: #641bff;
+  color: white;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  border-radius: 0.25em;
+  margin-top: 3rem;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.price_comparison_column .cta:hover, .price_comparison_column .cta:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,24 @@
+$body-bc: hsl(200, 50%, 12%);
+
+$head-bc: hsl(19, 76%, 88%);
+$head-w: 18.75rem;
+$head-h: 21.25rem;
+$head-br: 70% 70% 100% 100%;
+
+$eye-b-r: 100%;
+$eye-h: 2.8125rem;
+$eye-w: 4.0625rem;
+$eye-bt-bb: 3px solid hsl(19, 46%, 68%);
+
+$pupil-bwh: 41px;
+$pupils-bwh: 15px;
+
+$eyes-mouth: white;
+
+$hair-color: hsl(21, 33%, 28%);
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

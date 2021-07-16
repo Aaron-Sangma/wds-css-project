@@ -1,0 +1,15 @@
+@import "./mixin";
+
+.emoji {
+  margin: 1rem;
+  width: $emoji-size;
+  height: $emoji-size;
+
+  @import "./head";
+
+  @import "./eyes";
+
+  @import "./mouth";
+
+  @import "./face-mask";
+}

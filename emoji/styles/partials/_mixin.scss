@@ -1,0 +1,7 @@
+@mixin face-mouth {
+  position: absolute;
+  bottom: $emoji-size * 0.15;
+  left: $emoji-size * 0.5;
+  transform: $tr-x;
+  background-color: $eye-mouth-clr;
+}

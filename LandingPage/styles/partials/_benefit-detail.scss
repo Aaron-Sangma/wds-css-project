@@ -1,0 +1,20 @@
+.grid__benefit__detail {
+  margin-top: 4rem;
+
+  .benefit__detail {
+    grid-column: span 2;
+    margin: 2rem;
+    &__title {
+      text-align: center;
+      font-size: 1.75rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    &__text {
+      font-size: 1.5rem;
+      color: #444;
+      font-weight: lighter;
+    }
+  }
+}

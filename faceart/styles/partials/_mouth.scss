@@ -1,0 +1,14 @@
+@import "./variables";
+
+.mouth {
+  position: absolute;
+  width: 6.25rem;
+  height: 2.5rem;
+  background: $eyes-mouth;
+  margin-top: 14.0625rem;
+  border-radius: 20% 20% 100% 100%;
+  border: $eye-bt-bb;
+  border-left-width: 0.5px;
+  border-right-width: 0.5px;
+  border-top-width: 2px;
+}

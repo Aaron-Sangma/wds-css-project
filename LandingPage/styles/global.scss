@@ -1,0 +1,13 @@
+@import "./partials/font-face";
+
+body {
+  margin: 0 auto;
+  font-family: "Gotham Rounded", sans-serif;
+  padding-bottom: 3.125rem;
+}
+
+@import "./partials/dark-header";
+@import "./partials/light-header";
+@import "./partials/main-section";
+@import "./partials/benefit-detail";
+@import "./partials/media-queries";

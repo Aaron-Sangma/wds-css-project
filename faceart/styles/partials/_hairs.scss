@@ -1,0 +1,46 @@
+@import "./variables";
+
+.hair {
+  position: absolute;
+  width: $head-w;
+  height: 125px;
+  background-color: $hair-color;
+  margin-bottom: $head-w;
+  border-radius: 50% 100% 0 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $hair-color;
+    height: 6.25rem;
+    width: 0.625rem;
+    transform: translateY(100%);
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  &-corner {
+    position: absolute;
+    width: 100%;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0.875rem;
+      height: 1.25rem;
+      transform: rotate(45deg);
+      background-color: $hair-color;
+      top: 7.1875rem;
+      left: 0.3125rem;
+    }
+
+    &::after {
+      left: initial;
+      right: 0.3125rem;
+      transform: rotate(-45deg);
+    }
+  }
+}

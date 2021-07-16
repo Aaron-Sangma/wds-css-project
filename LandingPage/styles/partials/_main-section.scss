@@ -1,0 +1,30 @@
+.grid__video {
+  margin-top: 3.125rem;
+  align-items: center;
+  grid-template-areas: "video video video benefits benefits benefits";
+
+  & video {
+    grid-area: video;
+    width: 100%;
+    max-width: 56.25rem;
+  }
+
+  .benefits__section {
+    grid-area: benefits;
+    margin-left: 3rem;
+    justify-self: flex-start;
+
+    .benefit {
+      display: flex;
+      align-items: center;
+      font-size: 3rem;
+      margin-bottom: 3rem;
+      font-weight: 100;
+
+      img {
+        height: 3rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+}

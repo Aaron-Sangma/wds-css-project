@@ -1,0 +1,84 @@
+.btn {
+  margin: 2rem;
+  background-color: $background-color;
+  color: $color;
+  padding: 1.2rem;
+  font-size: larger;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+
+  &-border-pop::before {
+    @include pseudoContent;
+    border: $border-size solid $background-color;
+    transition: inset, 100ms, ease-in-out;
+  }
+
+  &-border-pop:hover::before,
+  &-border-pop:focus::before {
+    inset: $border-size * -2;
+  }
+
+  &-background-slide::before {
+    @include pseudoContent;
+    background-color: $accent-color;
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  &-background-slide:hover::before,
+  &-background-slide:focus::before {
+    transform: scaleX(1);
+  }
+  &-background-slide {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+  }
+
+  &-background-slide:hover,
+  &-background-slide:focus {
+    color: whitesmoke;
+  }
+
+  &-background-circle::before {
+    @include pseudoContent;
+    background-color: $background-color;
+    border-radius: 50%;
+    transform: scale(1.5);
+    transition: transform 500ms ease-in-out;
+  }
+  &-background-circle:hover::before,
+  &-background-circle:focus:before {
+    transform: scale(0);
+  }
+
+  &-background-circle {
+    z-index: 1;
+    overflow: hidden;
+    background-color: $accent-color;
+    transition: color 500ms ease-in-out;
+  }
+
+  &-background-circle:hover,
+  &-background-circle:focus {
+    color: whitesmoke;
+  }
+
+  &-border-underline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: $border-size;
+    background-color: $accent-color;
+    transition: transform 300ms ease-in-out;
+    transform: scale(0);
+  }
+
+  &-border-underline:hover::before,
+  &-border-underline:focus::before {
+    transform: scale(1);
+  }
+}

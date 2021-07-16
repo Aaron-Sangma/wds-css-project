@@ -1,0 +1,16 @@
+@import "./variables";
+
+.brows {
+  position: absolute;
+  width: $eye-w * 3;
+  display: flex;
+  justify-content: space-between;
+
+  .brow {
+    width: 4.0625rem;
+    height: 2rem;
+    border-top: 0.625rem solid $hair-color;
+    border-radius: $eye-b-r;
+    margin-bottom: 2.1875rem;
+  }
+}

@@ -1,0 +1,77 @@
+@import "./global";
+@import "./mixin";
+@import "./variables";
+
+.hero {
+  background-image: url($background-image);
+  height: $hero-h;
+  width: $hero-w;
+  background-position: center;
+  background-size: cover;
+  @include flexCenter;
+
+  .login-container {
+    background-color: hsla(201, 100%, 6%, 0.6);
+    padding: 3.125rem 1.875rem;
+    min-width: 25rem;
+    width: 50%;
+    max-width: 37.5rem;
+  }
+
+  .login-title {
+    color: white;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+
+    & label {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin: 0.4375rem;
+    }
+
+    & input {
+      font-size: 1.5rem;
+      padding: 0.1em;
+      background-color: hsla(201, 100%, 91%, 0.3);
+      border: 1px solid hsl(201, 100%, 6%);
+      border-radius: 0.3125em;
+      outline: none;
+      color: white;
+      font-weight: 300;
+    }
+    ::placeholder {
+      color: rgba(209, 209, 209, 0.822);
+    }
+
+    & input:focus {
+      border: 1px solid hsl(201, 100%, 50%);
+    }
+  }
+  & .login-btn {
+    border: 1px solid hsl(201, 100%, 50%);
+    border-radius: 0.3125em;
+    outline: none;
+    background-color: hsla(201, 100%, 50%, 0.1);
+    padding: 0.625rem 1.875rem;
+    width: 100%;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  & .login-btn:hover {
+    background-color: hsla(201, 100%, 50%, 0.3);
+  }
+  .login-btn:focus {
+    background-color: hsla(201, 83%, 27%, 0.5);
+  }
+}

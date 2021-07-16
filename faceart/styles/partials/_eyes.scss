@@ -1,0 +1,41 @@
+@import "./variables";
+
+.eyes {
+  position: absolute;
+  width: $eye-w * 3;
+  display: flex;
+  justify-content: space-between;
+
+  .eye {
+    background-color: $eyes-mouth;
+    width: $eye-w;
+    height: $eye-h;
+    border-radius: 100%;
+    border-top: $eye-bt-bb;
+    border-bottom: $eye-bt-bb;
+    @include flexCenter;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: $pupil-bwh;
+      height: $pupil-bwh;
+      background-color: hsl(79, 10%, 42%);
+      border-radius: 100%;
+      margin-left: 10px;
+      margin-bottom: 5px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: $pupils-bwh;
+      height: $pupils-bwh;
+      background-color: #333;
+      border-radius: 100%;
+      margin-left: 15px;
+      margin-bottom: 7px;
+    }
+  }
+}
